@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDF_Splitter", "src\PDF Splitter\PDF_Splitter.csproj", "{5F96BB3C-597F-4F44-9344-8D7404B61845}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupForPdfSplitter", "src\SetupForPdfSplitter\SetupForPdfSplitter.vdproj", "{F92280EE-19B7-4723-832F-4396D2823178}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F96BB3C-597F-4F44-9344-8D7404B61845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F96BB3C-597F-4F44-9344-8D7404B61845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F96BB3C-597F-4F44-9344-8D7404B61845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F96BB3C-597F-4F44-9344-8D7404B61845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92280EE-19B7-4723-832F-4396D2823178}.Debug|Any CPU.ActiveCfg = Debug
+		{F92280EE-19B7-4723-832F-4396D2823178}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {396BF6FE-D493-443E-8792-AE2687F9F1E1}
+	EndGlobalSection
+EndGlobal
