@@ -94,14 +94,14 @@ El programa generará un archivo zip, en la misma locación del PDF, cuyo conten
 <!-- LICENSE -->
 ## Licencia
 
-Distribuido bajo la licencia MIT. Consulte `LICENSE` para obtener más información.
+Distribuido bajo la licencia MIT. Consulte archivo [`LICENSE`](https://github.com/alephsub0/PDF-Splitter/blob/main/LICENSE) para obtener más información.
 
 
 <!-- CONTACT -->
 ## Créditos
 ### Desarrollador
 Víctor Silverio\
-Desarrollador Fullstack\
+Desarrollador Full-Stack\
 Graduado de Ingeniería en Sistemas y Computación en la \
 Pontificia Universidad Católica del Ecuador\
 vjose_2007@hotmail.com\
