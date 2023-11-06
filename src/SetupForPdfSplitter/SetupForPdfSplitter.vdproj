@@ -63,6 +63,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B5FEABCBE64F49E48AEC61407BCDD075"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_DF88F9362B7459B4A31093089F864367"
         "OwnerKey" = "8:_716BE77F2731ED4845CFAD231051F39D"
         "MsmSig" = "8:_UNDEFINED"
@@ -71,12 +77,6 @@
         {
         "MsmKey" = "8:_DF88F9362B7459B4A31093089F864367"
         "OwnerKey" = "8:_30A5EA015B29414C9904424B12462A22"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7BAB1C4724447540DC0C87EC5057B883"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -113,6 +113,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_0945B1F6D5F4A16040493E7400F3C334"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7BAB1C4724447540DC0C87EC5057B883"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -172,6 +178,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -395,6 +409,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B5FEABCBE64F49E48AEC61407BCDD075"
+            {
+            "SourcePath" = "8:..\\..\\LICENSE"
+            "TargetName" = "8:LICENSE"
+            "Tag" = "8:"
+            "Folder" = "8:_1BD308C97C19480D94B6C5D32BAF4B2E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DF88F9362B7459B4A31093089F864367"
