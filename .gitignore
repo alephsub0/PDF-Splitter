@@ -31,7 +31,6 @@
 *.out
 *.app
 
-
 # C# Standards
 [Oo]bj/
 [Bb]in/
@@ -45,3 +44,7 @@ artifacts/
 *DS_Store
 *.sln.ide
 .vs/
+
+# User Ignores
+src/SetupForPdfSplitter/Debug/
+src/SetupForPdfSplitter/Release/

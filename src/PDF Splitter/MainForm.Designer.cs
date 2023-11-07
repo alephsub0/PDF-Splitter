@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.lbTitulo1 = new System.Windows.Forms.Label();
-            this.lbTitulo2 = new System.Windows.Forms.Label();
             this.btnPDF = new System.Windows.Forms.Button();
             this.lbPath1 = new System.Windows.Forms.Label();
             this.lbPath2 = new System.Windows.Forms.Label();
@@ -38,35 +36,23 @@
             this.btnDividir = new System.Windows.Forms.Button();
             this.ofdPDF = new System.Windows.Forms.OpenFileDialog();
             this.ofdCSV = new System.Windows.Forms.OpenFileDialog();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ayudaToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAyudaVideo = new System.Windows.Forms.ToolStripMenuItem();
+            this.MasInformacion = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuCreditos = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbTitulo1
-            // 
-            this.lbTitulo1.AutoSize = true;
-            this.lbTitulo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo1.Location = new System.Drawing.Point(26, 26);
-            this.lbTitulo1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lbTitulo1.Name = "lbTitulo1";
-            this.lbTitulo1.Size = new System.Drawing.Size(97, 20);
-            this.lbTitulo1.TabIndex = 0;
-            this.lbTitulo1.Text = "Archivo PDF";
-            // 
-            // lbTitulo2
-            // 
-            this.lbTitulo2.AutoSize = true;
-            this.lbTitulo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTitulo2.Location = new System.Drawing.Point(26, 122);
-            this.lbTitulo2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.lbTitulo2.Name = "lbTitulo2";
-            this.lbTitulo2.Size = new System.Drawing.Size(98, 20);
-            this.lbTitulo2.TabIndex = 1;
-            this.lbTitulo2.Text = "Archivo CSV";
             // 
             // btnPDF
             // 
             this.btnPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPDF.Location = new System.Drawing.Point(28, 62);
-            this.btnPDF.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnPDF.Location = new System.Drawing.Point(18, 43);
+            this.btnPDF.Margin = new System.Windows.Forms.Padding(1);
             this.btnPDF.Name = "btnPDF";
             this.btnPDF.Size = new System.Drawing.Size(122, 28);
             this.btnPDF.TabIndex = 2;
@@ -77,8 +63,9 @@
             // lbPath1
             // 
             this.lbPath1.AutoEllipsis = true;
+            this.lbPath1.BackColor = System.Drawing.Color.Transparent;
             this.lbPath1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPath1.Location = new System.Drawing.Point(179, 68);
+            this.lbPath1.Location = new System.Drawing.Point(167, 49);
             this.lbPath1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbPath1.Name = "lbPath1";
             this.lbPath1.Size = new System.Drawing.Size(225, 28);
@@ -87,8 +74,9 @@
             // lbPath2
             // 
             this.lbPath2.AutoEllipsis = true;
+            this.lbPath2.BackColor = System.Drawing.Color.Transparent;
             this.lbPath2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPath2.Location = new System.Drawing.Point(179, 164);
+            this.lbPath2.Location = new System.Drawing.Point(167, 51);
             this.lbPath2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lbPath2.Name = "lbPath2";
             this.lbPath2.Size = new System.Drawing.Size(225, 28);
@@ -97,8 +85,8 @@
             // btnXLSX
             // 
             this.btnXLSX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXLSX.Location = new System.Drawing.Point(28, 159);
-            this.btnXLSX.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnXLSX.Location = new System.Drawing.Point(18, 45);
+            this.btnXLSX.Margin = new System.Windows.Forms.Padding(1);
             this.btnXLSX.Name = "btnXLSX";
             this.btnXLSX.Size = new System.Drawing.Size(122, 28);
             this.btnXLSX.TabIndex = 4;
@@ -108,41 +96,110 @@
             // 
             // btnDividir
             // 
-            this.btnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDividir.Location = new System.Drawing.Point(158, 214);
-            this.btnDividir.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnDividir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(126)))), ((int)(((byte)(251)))));
+            this.btnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDividir.ForeColor = System.Drawing.Color.Transparent;
+            this.btnDividir.Location = new System.Drawing.Point(158, 265);
+            this.btnDividir.Margin = new System.Windows.Forms.Padding(1);
             this.btnDividir.Name = "btnDividir";
-            this.btnDividir.Size = new System.Drawing.Size(122, 36);
+            this.btnDividir.Size = new System.Drawing.Size(122, 40);
             this.btnDividir.TabIndex = 6;
             this.btnDividir.Text = "Dividir PDF";
-            this.btnDividir.UseVisualStyleBackColor = true;
+            this.btnDividir.UseVisualStyleBackColor = false;
             this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
             // 
-            // Form1
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ayudaToolStrip});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(438, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // ayudaToolStrip
+            // 
+            this.ayudaToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuAyudaVideo,
+            this.MasInformacion,
+            this.MenuCreditos});
+            this.ayudaToolStrip.Name = "ayudaToolStrip";
+            this.ayudaToolStrip.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStrip.Text = "Ayuda";
+            // 
+            // MenuAyudaVideo
+            // 
+            this.MenuAyudaVideo.Image = ((System.Drawing.Image)(resources.GetObject("MenuAyudaVideo.Image")));
+            this.MenuAyudaVideo.Name = "MenuAyudaVideo";
+            this.MenuAyudaVideo.Size = new System.Drawing.Size(190, 22);
+            this.MenuAyudaVideo.Text = "Ver Ayuda";
+            this.MenuAyudaVideo.Click += new System.EventHandler(this.MenuAyudaVideo_Click);
+            // 
+            // MasInformacion
+            // 
+            this.MasInformacion.Image = ((System.Drawing.Image)(resources.GetObject("MasInformacion.Image")));
+            this.MasInformacion.Name = "MasInformacion";
+            this.MasInformacion.Size = new System.Drawing.Size(190, 22);
+            this.MasInformacion.Text = "Más Información";
+            this.MasInformacion.Click += new System.EventHandler(this.MasInformacion_Click);
+            // 
+            // MenuCreditos
+            // 
+            this.MenuCreditos.Name = "MenuCreditos";
+            this.MenuCreditos.Size = new System.Drawing.Size(190, 22);
+            this.MenuCreditos.Text = "Acerca de PDF Splitter";
+            this.MenuCreditos.Click += new System.EventHandler(this.MenuCreditos_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnPDF);
+            this.groupBox1.Controls.Add(this.lbPath1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 37);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(414, 100);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Archivo PDF";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lbPath2);
+            this.groupBox2.Controls.Add(this.btnXLSX);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 152);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(414, 100);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Archivo CSV";
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(438, 267);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(438, 320);
             this.Controls.Add(this.btnDividir);
-            this.Controls.Add(this.lbPath2);
-            this.Controls.Add(this.btnXLSX);
-            this.Controls.Add(this.lbPath1);
-            this.Controls.Add(this.btnPDF);
-            this.Controls.Add(this.lbTitulo2);
-            this.Controls.Add(this.lbTitulo1);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.Name = "Form1";
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Name = "MainForm";
             this.Text = "PDF Splitter";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lbTitulo1;
-        private System.Windows.Forms.Label lbTitulo2;
         private System.Windows.Forms.Button btnPDF;
         private System.Windows.Forms.Label lbPath1;
         private System.Windows.Forms.Label lbPath2;
@@ -150,6 +207,13 @@
         private System.Windows.Forms.Button btnDividir;
         private System.Windows.Forms.OpenFileDialog ofdPDF;
         private System.Windows.Forms.OpenFileDialog ofdCSV;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStrip;
+        private System.Windows.Forms.ToolStripMenuItem MenuAyudaVideo;
+        private System.Windows.Forms.ToolStripMenuItem MasInformacion;
+        private System.Windows.Forms.ToolStripMenuItem MenuCreditos;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

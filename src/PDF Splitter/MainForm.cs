@@ -74,5 +74,20 @@ namespace PDF_Splitter
             ofdPDF.Dispose();
             ofdCSV.Dispose();
         }
+
+        private void MenuAyudaVideo_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://go.alephsub0.org/PDFSplitter-video");
+        }
+
+        private void MasInformacion_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://go.alephsub0.org/PDFSplitter");
+        }
+
+        private void MenuCreditos_Click(object sender, EventArgs e)
+        {
+            new Creditos().Show();
+        }
     }
 }
